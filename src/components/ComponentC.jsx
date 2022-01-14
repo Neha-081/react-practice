@@ -1,27 +1,11 @@
 import React from 'react'
+import ComponentE from './ComponentE'
 
-import { UserContext,ChannelContext } from '../App'
 
 function ComponentC() {
     return (
         <div>
-            <UserContext.Consumer>
-                {
-                    user=>{
-                        return(
-                            <ChannelContext.Consumer>
-                                {
-                                    channel=>{
-                                        return <div>User is {user} and channel {channel}</div>
-
-                                    }
-                                }
-                            </ChannelContext.Consumer>
-                        )
-                      
-                    }
-                }
-            </UserContext.Consumer>
+            <ComponentE/>
         </div>
     )
 }
