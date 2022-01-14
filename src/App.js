@@ -6,6 +6,7 @@ import React from 'react';
 import ComponentA from './components/ComponentA';
 import CounterOne from './components/CounterOne';
 import CounterTwo from './components/CounterTwo';
+import CounterThree from  './components/CounterThree'
 
 export const UserContext=React.createContext()
 export const ChannelContext=React.createContext()
@@ -22,7 +23,7 @@ function App() {
 //     </div>
 
 <div>
-  <CounterTwo/>
+  <CounterThree/>
 </div>
   )
 }
