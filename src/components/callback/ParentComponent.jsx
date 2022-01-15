@@ -9,6 +9,7 @@ function ParentComponent() {
     const [age,setAge]=useState(25)
     const[salary,setSalary]=useState(50000)
 
+    //usecallback for performance optimization which prevents all renders other than the dependency provid to it as second parameter 
     const incrementAge=useCallback(()=>{
         setAge(age+1)
     },[age])
