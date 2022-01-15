@@ -7,6 +7,8 @@ import DataFetchingReducer from './components/DataFetchingReducer';
 import ParentComponent from './components/callback/ParentComponent';
 import Counter from './components/useMemo/Counter';
 import FocusInput from './components/useRef/FocusInput';
+import HookTimer from './components/useRef/HookTimer';
+
 
 export const CountContext=React.createContext()
 
@@ -29,7 +31,7 @@ export const CountContext=React.createContext()
 function App(){
   return(
     <div>
-<FocusInput/>
+<HookTimer/>
     </div>
   )
 }
