@@ -8,6 +8,8 @@ import ParentComponent from './components/callback/ParentComponent';
 import Counter from './components/useMemo/Counter';
 import FocusInput from './components/useRef/FocusInput';
 import HookTimer from './components/useRef/HookTimer';
+import DocTitleOne from './components/CustomHook/DocTitleOne';
+import DocTitleTwo from './components/CustomHook/DocTitleTwo';
 
 
 export const CountContext=React.createContext()
@@ -31,7 +33,8 @@ export const CountContext=React.createContext()
 function App(){
   return(
     <div>
-<HookTimer/>
+<DocTitleOne/>
+<DocTitleTwo/>
     </div>
   )
 }
