@@ -8,9 +8,10 @@ import ParentComponent from './components/callback/ParentComponent';
 import Counter from './components/useMemo/Counter';
 import FocusInput from './components/useRef/FocusInput';
 import HookTimer from './components/useRef/HookTimer';
-import DocTitleOne from './components/CustomHook/DocTitleOne';
-import DocTitleTwo from './components/CustomHook/DocTitleTwo';
-
+import DocTitleOne from './components/CustomHook1/DocTitleOne';
+import DocTitleTwo from './components/CustomHook1/DocTitleTwo';
+import CounterOne from './components/CustomHook2/CounterOne';
+import CounterTwo from './components/CustomHook2/CounterTwo';
 
 export const CountContext=React.createContext()
 
@@ -33,8 +34,9 @@ export const CountContext=React.createContext()
 function App(){
   return(
     <div>
-<DocTitleOne/>
-<DocTitleTwo/>
+<CounterOne/>
+<CounterTwo/>
+
     </div>
   )
 }
