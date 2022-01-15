@@ -4,6 +4,7 @@ import ComponentB from './components/ComponentB';
 import ComponentC from './components/ComponentC';
 import DataFetchingState from './components/DataFetchingState';
 import DataFetchingReducer from './components/DataFetchingReducer';
+import ParentComponent from './components/callback/ParentComponent';
 
 export const CountContext=React.createContext()
 
@@ -26,7 +27,7 @@ export const CountContext=React.createContext()
 function App(){
   return(
     <div>
-<DataFetchingReducer/>
+<ParentComponent/>
     </div>
   )
 }
